@@ -1,0 +1,73 @@
+html{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 75%;
+    height: 100%;
+} 
+body{
+    box-sizing: border-box;
+    font-display: "Helvetica", Segoe UI, Sans;
+    background: linear-gradient(to bottom, deepskyblue, white);
+}
+h1{
+    text-transform: uppercase;    
+}   
+
+input#todo{
+    min-width: 250px;
+    padding: 10px;
+    border-radius:10px;
+    border: 1px solid #222222;
+}
+ul#todolist {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+ul#todolist li {
+    text-align: left;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 0px;
+    cursor: pointer;
+    min-width: 250px;
+}
+li.completed{
+    text-decoration:line-through;
+}
+ul#todolist li span.completed:after, 
+ul#todolist li span.uncomplete:after{
+    content: '\01F5F9';
+    color: green;
+    font-size: 18px;
+    padding: 4px;
+}
+
+ul#todolist li span.uncomplete:after{
+    content: '\02610';
+} 
+
+ul#todolist li:hover span.cross:after{
+    content: '\02A2F';
+    color: red;
+    font-size: 28px;
+    padding: 4px;
+    float: right;
+    margin-right: 5px;
+}
+button{
+    color: #fff;
+    background: green;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solit white;
+    width: 120px;
+    font-size:75%;
+    cursor: pointer;
+}
+button.active {
+    background: red;
+}
